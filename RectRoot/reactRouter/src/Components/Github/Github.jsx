@@ -16,14 +16,18 @@ const Github = () => {
   
 
 
-  return (
+  return (<>
 
     <div className='text-center m-4 bg-gray-500 text-white p-4 text-3xl'>
-      Github followers: {data.followers}
+    <div className='mt-4'> UserName: {data.name}</div>
+     <div className='mt-4'> Github followers: {data.followers}</div>
+      <div className='mt-4'> Github following: {data.following}</div>
+      
+      
       
       <img src={data.avatar_url} alt='Picture' width={300}/>
     </div>
-  )
+    </>)
 }
 
 export default Github
